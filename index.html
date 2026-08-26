@@ -1078,7 +1078,6 @@
          const result = document.getElementById("formResult");
          const button = this;
 
-         // HTML required fields check
          if (!form.checkValidity()) {
             form.reportValidity();
             return;
@@ -1090,10 +1089,7 @@
 
          const formData = new FormData(form);
 
-         formData.append("access_key", "504bacd2-a3a8-449a-9749-7d6253acab59");
-
          try {
-
             const response = await fetch("https://api.web3forms.com/submit", {
                method: "POST",
                body: formData
@@ -1105,7 +1101,7 @@
                result.innerText = "Message sent successfully!";
                form.reset();
             } else {
-               result.innerText = "Something went wrong. Please try again.";
+               result.innerText = data.message || "Something went wrong. Please try again.";
                console.log(data);
             }
 
@@ -1117,6 +1113,7 @@
          button.disabled = false;
          button.innerText = "Send Message";
       });
+
    </script>
    <!--<< Main.js >>-->
 </body>
