@@ -4939,7 +4939,7 @@ p {
 }
 
 .working-wrap {
-  max-width: auto;
+  max-width: 500px;
 }
 
 .working-wrap .working-work-items {
@@ -5031,6 +5031,11 @@ p {
     height: 30px;
     object-fit: contain;
   }
+
+  .working-wrap {
+   max-width: 400px;
+  }
+
 }
 
 .cmn-slide-btn {
