@@ -1,0 +1,33 @@
+<svg viewBox="0 0 760 220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .icon-bg { fill: #000000; }
+      .icon-mark { fill: #FDF9CF; }
+      .word-bold { font-family: 'Arial Black', Arial, sans-serif; font-weight: 900; fill: #FDF9CF; }
+      .word-light { font-family: Arial, sans-serif; font-weight: 400; fill: #FDF9CF; }
+      .tagline { font-family: Arial, sans-serif; font-weight: 600; fill: #FDF9CF; letter-spacing: 3px; opacity: 0.75; }
+    </style>
+  </defs>
+
+  <!-- Icon: white rounded box, 10px radius, black U + arrow mark -->
+  <rect x="20" y="30" width="150" height="150" rx="10" ry="10" class="icon-bg"/>
+  <path d="M 58 78
+           L 74 78
+           L 74 122
+           Q 74 140 95 140
+           Q 116 140 116 122
+           L 116 78
+           L 132 78
+           L 132 122
+           Q 132 156 95 156
+           Q 58 156 58 122
+           Z" class="icon-mark"/>
+  <path d="M 95 46 L 122 74 L 106 74 L 106 90 L 84 90 L 84 74 L 68 74 Z" class="icon-mark"/>
+
+  <!-- Wordmark -->
+  <text x="195" y="110" font-size="64" class="word-bold">Upendra</text>
+  <text x="195" y="160" font-size="34" class="word-light">Web Partners</text>
+
+  <!-- Tagline -->
+  <text x="197" y="188" font-size="14" class="tagline">CUSTOM WEB SOLUTIONS · GWALIOR</text>
+</svg>
