@@ -454,7 +454,7 @@ h2 {
   }
 
   .about-img {
-    height: 400px !important;
+    height: auto !important;
   }
 
 .working-work-items {
@@ -5037,7 +5037,7 @@ p {
   }
 
   .working-wrap {
-   max-width: 400px !important;
+   max-width: auto !important;
   }
 
 }
