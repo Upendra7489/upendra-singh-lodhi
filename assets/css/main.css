@@ -5035,11 +5035,6 @@ p {
     height: 30px;
     object-fit: contain;
   }
-
-  .working-wrap {
-   max-width: auto !important;
-  }
-
 }
 
 .cmn-slide-btn {
@@ -5604,5 +5599,39 @@ p {
     opacity: 0;
   }
 }
+
+@media (max-width: 575px) {
+
+  .working-wrap {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .working-wrap .working-work-items {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    box-sizing: border-box;
+  }
+
+  .working-wrap .working-work-items .thumb {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .working-wrap .working-work-items .thumb img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    display: block;
+  }
+
+}
+
 
 /*# sourceMappingURL=main.css.map */
