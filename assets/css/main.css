@@ -357,9 +357,7 @@ h2 {
         font-size:12px;
         margin-top:25px;
     }
-    .round10 {
-      height: 400px !important;
-    }
+  
 
 }
 
@@ -5604,6 +5602,10 @@ p {
 }
 
 @media (max-width: 575px) {
+
+    .round10 {
+      height: 400px !important;
+    }
 
   .working-wrap {
     width: 100% !important;
