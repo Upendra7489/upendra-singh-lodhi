@@ -5012,7 +5012,7 @@ p {
 }
 
 .sponsor__slide {
-  width: 240px;
+  width: auto;
   height: 130px;
 }
 
@@ -5027,7 +5027,7 @@ p {
 @media (max-width: 575px) {
   .sponsor__slide img {
     transition: all 0.4s;
-    width: 100px;
+    width: auto;
     height: 30px;
     object-fit: contain;
   }
