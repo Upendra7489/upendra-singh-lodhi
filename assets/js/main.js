@@ -288,27 +288,20 @@ $(document).ready(function () {
 		return false;
 	});
 	//>> Main Menu <<//
+//>> Close Mobile Menu on Scroll (window + inner menu scroll) <<//
+$(window).on("scroll", function () {
+    if ($(".main-menu").hasClass("active")) {
+        $(".main-menu, .header-bar").removeClass("active");
+    }
+});
 
-		//>> Close Mobile Menu on Outside Click <<//
-	$(document).on("click touchstart", function (e) {
-		if ($(".main-menu").hasClass("active")) {
-			if (
-				!$(e.target).closest(".main-menu").length &&
-				!$(e.target).closest(".header-bar").length
-			) {
-				$(".main-menu, .header-bar").removeClass("active");
-			}
-		}
-	});
-	//>> Close Mobile Menu on Outside Click <<//
-
-	//>> Close Mobile Menu on Scroll <<//
-	$(window).on("scroll", function () {
-		if ($(".main-menu").hasClass("active")) {
-			$(".main-menu, .header-bar").removeClass("active");
-		}
-	});
-	//>> Close Mobile Menu on Scroll <<//
+// Agar .main-menu khud scrollable hai (internal scroll)
+$(document).on("scroll", ".main-menu", function () {
+    if ($(".main-menu").hasClass("active")) {
+        $(".main-menu, .header-bar").removeClass("active");
+    }
+});
+//>> Close Mobile Menu on Scroll <<//
 
 	//>> Magnific Popup <<//
 	$(".video-btn").magnificPopup({
